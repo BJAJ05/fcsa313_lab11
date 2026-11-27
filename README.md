@@ -105,3 +105,17 @@ mvn clean test-compile org.pitest:pitest-maven:mutationCoverage 2>&1 | ansi2txt 
 
 
 ![](images/pit-B2.png)
+
+
+
+
+
+
+
+
+
+
+## Хэсэг C: PIT-гүйгээр, гараар нэг мутант
+
+Массивын урт хэзээ ч сөрөг байж чадахгүй тул `scores.length <= 0` нь яг `scores.length == 0` үед л үнэн болж, ямар ч оролтод `gpa()`-ийн зан төлөв өөрчлөгдөхгүй. Тест зөвхөн гаралт эсвэл exception-ий ялгаагаар мутантыг алдаг тул ялгаатай гаралт өгөх оролт огт байхгүй энэ мутантыг ямар ч тест алж чадахгүй. (`results/mvn-test-equivalent-mutant.txt`: 37/37 давсан).
+
