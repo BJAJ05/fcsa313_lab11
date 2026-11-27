@@ -91,3 +91,17 @@ mvn clean test-compile org.pitest:pitest-maven:mutationCoverage 2>&1 | ansi2txt 
 | 52             | changed conditional boundary x2, removed conditional - replaced comparison check with true x2           | Тест дутуу | B2: (3.8, 15) = 100, (3.79, 15) = 70, (3.8, 14) = 70                      | `>=` → `>` зөвхөн яг 3.8, 15 дээр ялгарна; "true" нь `&&`-ийн нэг нөхцөлийг үнэн болгодог тул голч хүрэхгүй ч кредит хангасан (эсвэл эсрэгээр) оролт хэрэгтэй. |
 | 53             | changed conditional boundary x2, removed conditional - replaced comparison check with true x2           | Тест дутуу | B2: (3.4, 12) = 70, (3.39, 12) = 50, (3.4, 11) = 50                       | 52-р мөртэй ижил шалтгаан, 3.4/12 заагт.                                                                                                                       |
 | 54             | changed conditional boundary                                                                            | Тест дутуу | B2: (3.0, 0) = 50                                                         | `>=` → `>` зөвхөн яг 3.0 дээр ялгарна.                                                                                                                         |
+
+
+
+
+
+
+
+
+
+
+
+
+
+![](images/pit-B2.png)
